@@ -189,7 +189,7 @@ Rails.application.routes.draw do
     end
   end
 
-  constraints subdomain: 'api' do
+  constraints subdomain: 'api.feedbin' do
     namespace :api, path: nil do
       namespace :v1 do
         match '*path', to: 'api#gone', via: :all
@@ -197,7 +197,7 @@ Rails.application.routes.draw do
     end
   end
 
-  constraints subdomain: 'api' do
+  constraints subdomain: 'api.feedbin' do
     namespace :api, path: nil do
       namespace :v2 do
 
